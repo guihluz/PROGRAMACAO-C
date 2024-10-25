@@ -1,6 +1,12 @@
 #include <stdio.h>
+// VERIFICAR AS QUESTOES DE COMENTARIOS DO EXECICIO UM OBJETIVO, ENTRADA, SAIDA
 
-int main() {
+// NA SOLUCAO PODERIA UTILIZAR ARRAY PARA SIMPLIFICAR A LOGICA
+
+int main() 
+    // DEFINIR QUE AQUI COMEÇA AS VARIAVIES
+    // DEIXAR AS DECLARAÇÕES DE INT EM UM LUGAR SO
+    // INDICE DEVE SER INT E NAO FLOAT
     int idade, totalPessoas = 0;
     float indice, somaIdade = 0, somaIndice = 0;
     int satisfacao5 = 0, satisfacao10 = 0, abaixoDe7 = 0;
@@ -23,6 +29,7 @@ int main() {
         }
     } while (idade != 999);
 
+    // SE A IDADE FOR 999 VAI QUEBRAR TODOS ESSES CALCULOS AQUI EMBAIXO
     float mediaIdade = somaIdade / totalPessoas;
     float mediaIndice = somaIndice / totalPessoas;
     float percentual5 = (float)satisfacao5 / totalPessoas * 100;
